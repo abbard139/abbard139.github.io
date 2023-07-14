@@ -1,83 +1,80 @@
 * {
     box-sizing: border-box;
+    
 }
 
 body {
-     min-width: 800px;
     background-color: rgb(236, 236, 236);
+    height: 1000x;
 }
 
-.navigation ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+.navigation {
+    display: inline-flex;
     background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    min-width: 500px;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    /* flex-wrap: unset; */
 }
 
-.navigation a, .navigation li,img {
+#form {
+    text-transform: capitalize;
+}
+/* logo */
+.navigation #img:hover {
+    border-bottom: none;
+}
+
+
+.navigation a {
     font-family: 'Dosis', sans-serif;
     background-color: rgb(255, 255, 255);
     text-decoration: none;
     color: black;
     font-size: 15px;
-    margin-right: 15px;
-
+    margin: 10px;
 }
 
-.navigation {
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 100px;
-    z-index: 1;
-}
-
-.navigation a:hover,.navigation a:active {
-    text-decoration: underline;
+.navigation a:hover {
+    border-bottom: 3px red solid;
+    padding-bottom: 3px;
+    text-decoration: none;
     text-decoration-color: rgb(198, 25, 25);
-    text-decoration-thickness: 3px;
-    /* border-bottom: rgb(215, 40, 40) 2px solid; */
-}
-.navigation img {
-    position: relative;
-    top: 30px;
-    left: 20px;
-}
-.navigation li {
-    position: relative;
-    bottom: 20px;
 }
 
-#form {
-    position: relative;
-    right: 0;
-    left: 300px;
-    list-style: circle;
+a:active {
+    font-size: smaller;
 }
+
+.navigation li {
+    display: inline-flex;
+}
+
+
 
 
 
 
 /* body */
 
-.women {
-    background-color: #dec6d8;
+.div1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    top: 100px;
-    float: left;
-    width: 500px;
-    height: 500px;
+    top: 95px;
+    flex-direction: row;
+    flex-grow: 3;
+    left: 0;
 }
 
-.women h2 {
-    font-family: 'Dosis' !important; 
-    font-family: 'Edu VIC WA NT Beginner', cursive;
-    font-size: x-large;
-}
-
-.women h2, .women p, .women a {
+.sec h2, .sec p, .sec a {
     position: relative;
     top: 200px;
     left: 40px;
@@ -86,65 +83,81 @@ body {
     font-family: "Jost", sans-serif;
 }
 
-.women a {
-    text-decoration: underline;
-    color: black;
-    text-decoration-color: rgb(236, 25, 25);
-}
-
-.women a:hover {
+section a {
     text-decoration: none;
+    color: black;
+    border-bottom: red 2px solid;
+    padding-bottom: 3px;
 }
 
+section a:hover {
+    border: none;
+}
 
-.men {
+.women {
+    background-color: #ee95f8 !important;
+
+}
+
+.sec2 {
     background-color: #b2ecf0;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.sec2 h2, .sec2 p, .sec2 a {
     position: relative;
     top: 100px;
-    width: 250px;
-    height: 245px;
-    float: left;
-    margin-left: 10px;
-}
-
-.men h2, .men p, .men a {
-    position: relative;
-    top: 80px;
     font-family: 'Edu VIC WA NT Beginner', cursive;
     font-family: 'Jost', sans-serif;
+    left: 20px;
 }
 
 .kid {
     background-color: #dfcadf;
-    position: relative;
-    top: 100px;
-    float: left;
-    width: 250px;
-    height: 245px;
-    margin-left: 10px;
 }
 
 .cosmetics {
     background-color: #d2f1bf;
-    position: relative;
-    top: 100px;
-    float: left;
-    width: 250px;
-    height: 245px;
-    margin-left: 10px;
-    margin-top: 10px;
 }
 
 .accessories {
     background-color: #b9b9b9;
-    position: relative;
-    top: 335px;
-    width: 250px;
-    height: 245px;
-    margin-top: 10px;
-    left: 510px;
 }
-.div1 {
-    box-sizing: border-box;
-    display: inline-block;
+
+
+footer{
+    position: relative;
+    background-color: #b7b7b7;
+    width: 100%;
+    bottom: 0;
+    display: inline-flex;
+    flex-direction: column;
+    z-index: 1;
+    margin-top: 200px;
+    height: 200px;
+}
+
+footer a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #271313;
+    text-decoration: none;
+    list-style: none;
+}
+
+footer li {
+    border-left: rgb(138, 138, 167) 3px solid;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+footer ul {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+   
 }
