@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+     min-width: 800px;
+    background-color: rgb(236, 236, 236);
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.navigation a, .navigation li,img {
+    font-family: 'Dosis', sans-serif;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin-right: 15px;
+
+}
+
+.navigation {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 1;
+}
+
+.navigation a:hover,.navigation a:active {
+    text-decoration: underline;
+    text-decoration-color: rgb(198, 25, 25);
+    text-decoration-thickness: 3px;
+    /* border-bottom: rgb(215, 40, 40) 2px solid; */
+}
+.navigation img {
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+.navigation li {
+    position: relative;
+    bottom: 20px;
+}
+
+#form {
+    position: relative;
+    right: 0;
+    left: 300px;
+    list-style: circle;
+}
+
+
+
+
+/* body */
+
+.women {
+    background-color: #dec6d8;
+    position: relative;
+    top: 100px;
+    float: left;
+    width: 500px;
+    height: 500px;
+}
+
+.women h2 {
+    font-family: 'Dosis' !important; 
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: x-large;
+}
+
+.women h2, .women p, .women a {
+    position: relative;
+    top: 200px;
+    left: 40px;
+    width: 250px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: "Jost", sans-serif;
+}
+
+.women a {
+    text-decoration: underline;
+    color: black;
+    text-decoration-color: rgb(236, 25, 25);
+}
+
+.women a:hover {
+    text-decoration: none;
+}
+
+
+.men {
+    background-color: #b2ecf0;
+    position: relative;
+    top: 100px;
+    width: 250px;
+    height: 245px;
+    float: left;
+    margin-left: 10px;
+}
+
+.men h2, .men p, .men a {
+    position: relative;
+    top: 80px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Jost', sans-serif;
+}
+
+.kid {
+    background-color: #dfcadf;
+    position: relative;
+    top: 100px;
+    float: left;
+    width: 250px;
+    height: 245px;
+    margin-left: 10px;
+}
+
+.cosmetics {
+    background-color: #d2f1bf;
+    position: relative;
+    top: 100px;
+    float: left;
+    width: 250px;
+    height: 245px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.accessories {
+    background-color: #b9b9b9;
+    position: relative;
+    top: 335px;
+    width: 250px;
+    height: 245px;
+    margin-top: 10px;
+    left: 510px;
+}
+.div1 {
+    box-sizing: border-box;
+    display: inline-block;
+}
